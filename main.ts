@@ -18,6 +18,20 @@ export default {
         }
       );
     }
+    if (
+      pathname === "/.well-known/nostr.json" &&
+      name === "aptx4869"
+    ) {
+      const myPubKey = "npub1vj42wvvf47q5jallthkmh2cz9hcrpuwhmulxxpavav0amvcdlprsds03ln";
+      return new Response(
+        JSON.stringify({ names: { [name]: nip19.decode(myPubKey).data } }), {
+          headers: {
+            "cache-control": "public, max-age=31536000, immutable",
+            "access-control-allow-origin": "*"
+          }
+        }
+      );
+    }
     if (pathname === "/") {
       return Response.redirect("https://github.com/tony-aptx4869", 301);
     }
