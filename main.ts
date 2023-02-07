@@ -12,8 +12,7 @@ export default {
       return new Response(
         JSON.stringify({ names: { [name]: nip19.decode(name).data } }), {
           headers: {
-            "cache-control": "public, max-age=31536000, immutable",
-            "access-control-allow-origin": "*"
+            "cache-control": "public, max-age=31536000, immutable"
           }
         }
       );
@@ -26,8 +25,7 @@ export default {
       return new Response(
         JSON.stringify({ names: { [name]: nip19.decode(myPubKey).data } }), {
           headers: {
-            "cache-control": "public, max-age=31536000, immutable",
-            "access-control-allow-origin": "*"
+            "cache-control": "public, max-age=31536000, immutable"
           }
         }
       );
