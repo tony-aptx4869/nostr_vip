@@ -18,6 +18,9 @@ export default {
         }
       );
     }
+    if (pathname === "/") {
+      return Response.redirect("https://github.com/tony-aptx4869", 301);
+    }
     return new Response(null, { status: 404 });
   },
 };

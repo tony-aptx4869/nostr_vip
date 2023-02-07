@@ -18,5 +18,5 @@
   reverse_proxy /.well-known/nostr.json nostr-vip.aptx4869.workers.dev
 }
 
-# https://aptx4869.tv/.well-known/nostr.json?name=npub1vj42wvvf47q5jallthkmh2cz9hcrpuwhmulxxpavav0amvcdlprsds03ln
-# https://aptx4869.tv/.well-known/nostr.json
+# https://aptx4869.app/.well-known/nostr.json?name=npub1vj42wvvf47q5jallthkmh2cz9hcrpuwhmulxxpavav0amvcdlprsds03ln
+# https://aptx4869.app/.well-known/nostr.json
