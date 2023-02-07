@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    pull_policy: always
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /root/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - /root/caddy/config:/config
+      - /root/caddy/data:/data
+    env_file: caddy.env
+    networks:
+      - caddy-network
+
+networks:
+  caddy-network:
+    external: true

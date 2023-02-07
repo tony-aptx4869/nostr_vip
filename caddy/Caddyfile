@@ -1,0 +1,22 @@
+{$DOMAIN}:443 {
+  log {
+    level INFO
+    output file {$LOG_FILE} {
+      roll_size 10MB
+      roll_keep 10
+    }
+  }
+
+  # Use the ACME HTTP-01 challenge to get a cert for the configured domain.
+  tls {$EMAIL}
+
+  # This setting may have compatibility issues with some browsers
+  # (e.g., attachment downloading on Firefox). Try disabling this
+  # if you encounter issues.
+  encode gzip
+
+  reverse_proxy /.well-known/nostr.json nostr-vip.aptx4869.workers.dev
+}
+
+# https://aptx4869.tv/.well-known/nostr.json?name=npub1vj42wvvf47q5jallthkmh2cz9hcrpuwhmulxxpavav0amvcdlprsds03ln
+# https://aptx4869.tv/.well-known/nostr.json
