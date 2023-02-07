@@ -20,5 +20,5 @@ Or these QR codes:
 
 ![@aptx4869 QR Code](https://img.tonychang1069.top/uPic/2023/02/08/nostr-aptx4869-qr-code.png)
 
-![@aptx4869 QR Code](https://img.tonychang1069.top/uPic/2023/02/08/nostr-aptx4869-qr-code.jpg)
+![@aptx4869 QR Code 2](https://img.tonychang1069.top/uPic/2023/02/08/nostr-aptx4869-qr-code.jpg)
 
