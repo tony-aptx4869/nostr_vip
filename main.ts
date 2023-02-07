@@ -10,8 +10,12 @@ export default {
       name.startsWith("npub")
     ) {
       return new Response(
-        JSON.stringify({ names: { [name]: nip19.decode(name).data } }),
-        { headers: { "cache-control": "public, max-age=31536000, immutable" } }
+        JSON.stringify({ names: { [name]: nip19.decode(name).data } }), {
+          headers: {
+            "cache-control": "public, max-age=31536000, immutable",
+            "access-control-allow-origin": "*"
+          }
+        }
       );
     }
     return new Response(null, { status: 404 });
