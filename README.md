@@ -18,7 +18,7 @@ Or this link: [@aptx4869](nostr:npub1vj42wvvf47q5jallthkmh2cz9hcrpuwhmulxxpavav0
 
 Or these QR codes:
 
-![@aptx4869 QR Code](https://img.tonychang1069.top/uPic/2023/02/08/nostr-aptx4869-qr-code.jpg)
-
 ![@aptx4869 QR Code](https://img.tonychang1069.top/uPic/2023/02/08/nostr-aptx4869-qr-code.png)
+
+![@aptx4869 QR Code](https://img.tonychang1069.top/uPic/2023/02/08/nostr-aptx4869-qr-code.jpg)
 
